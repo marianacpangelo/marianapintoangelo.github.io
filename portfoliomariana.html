@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel = "shortcut icon" type="image/png" href="mandala.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PORTFOLIO</title>
+
+<style>
+* {box-sizing: border-box;}
+
+
+body { 
+margin: 0;
+font-family: Helvetica;
+font-weight: regular;
+background-color: #e1e1e1;
+background: linear-gradient(359deg, #e1e1e1, #8b8bd0, #e1e1e1);
+background-size: 600% 600%;
+animation: AnimationName 28s ease infinite;
+}
+
+@keyframes AnimationName { 
+0%{background-position:50% 0%}
+50%{background-position:50% 100%}
+100%{background-position:50% 0%}
+}
+
+
+/* FONTS------------------------------*/
+@font-face {
+src: url(fonts/NeueMontreal-Regular.otf);
+font-family: montrealRegular;
+}
+
+@font-face {
+src: url(fonts/NeueMontreal-Medium.otf);
+font-family: montrealMedium;
+}
+
+@font-face {
+src: url(fonts/PTSerif-Regular.otf);
+font-family: PTSerifRegular;
+}
+
+@font-face {
+src: url(fonts/PTSerif-Italic.otf);
+font-family: PTSerifItalic;
+}
+
+/* HEADER------------------------------
+.header {
+overflow: hidden;
+padding: 50px 50px 50px 50px;
+}
+
+.header a {
+float: left;
+color: rgb(48, 48, 48);
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-family: montrealRegular;
+font-size: 9px;
+}
+
+.header a.logo {
+font-size: 20px;
+font-family: montrealMedium;
+margin-top:-8px;
+
+}
+
+.header-right {
+float: right;
+}
+
+@media screen and (max-width: 400px) {
+.header a {
+float: none;
+display: block;
+text-align: left;
+}
+
+.header-right {
+float: none;
+}
+}
+*/
+
+.bottomnav {
+    overflow: hidden;
+    margin-right:30px;
+}
+
+.bottomnav a{
+    overflow: hidden;
+    float: right;
+  display: block;
+  color: rgb(48,48,48);
+  text-align: center;
+  padding: 30px 50px 30px 20px;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+.bottomnav #meunome a{
+font-size:17px;
+padding:42px 50px 50px;
+float: left;
+}
+
+.topnav {
+  overflow: hidden;
+  margin:20px;
+  
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: rgb(48,48,48);
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+
+.topnav a.active {
+    font-family: montrealMedium;
+    color: rgb(48,48,48);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav #meunome a{
+font-size:17px;
+padding:42px 50px 50px;
+float: left;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    padding:12px 10px 1px 9px;
+  }
+}
+
+
+.titulos{
+font-family: PTSerifItalic;
+font-size: 14px;
+color: rgb(48, 48, 48);
+box-sizing: border-box;
+border: 0.1px solid  rgb(48, 48, 48);
+padding:5px 20px 5px 20px;
+margin-left: 80px;
+border-radius: 25.5px;
+}
+
+.card {
+font-family: montrealMedium;
+font-size:12px;
+background-color: rgb(236, 236, 236,0.08);
+margin:0px;
+padding: 15px;
+height: 100%;
+color: rgb(48, 48, 48);
+border-radius: 7px;
+border: 0.2px solid  rgb(48, 48, 48);
+text-align: center;
+}
+
+.subtitulo{
+font-family: PTSerifItalic;
+font-size: 9px;
+color:  rgb(100,100,100);
+}
+
+.cards {
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+gap: 1rem;
+margin: 0px 190px 100px 190px;
+grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+}
+
+
+
+/* FOOTER------------------------------*/
+.footer {
+overflow: hidden;
+padding: 35px 35px 35px 35px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+.footer a {
+float: left;
+color: rgb(48, 48, 48);
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 8px;
+line-height: 25px;
+border-radius: 4px;
+}
+
+.footer p {
+font-family: PTSerifItalic;
+font-size: 10px;
+color: rgb(48, 48, 48);
+text-align: left;
+float: left;
+/*margin-bottom:-125px;
+margin-left:-80px;*/
+
+}
+
+.footer-right {
+float: right;
+}
+
+.footer-left {
+float: left;
+}
+
+
+@media screen and (max-width: 300px) {
+.footer a {
+float: none;
+display: block;
+text-align: left;
+}
+
+.footer-right {
+float: none;
+}
+}
+
+.responsiveImages{
+width: 60%;
+
+}
+
+
+/*SCROLL DOWN------------------------------*/
+#scrolldown {
+color: rgb(48, 48, 48);
+padding: 70px 70px 70px 70px;   
+text-align: center;
+font-family: Helvetica;
+font-weight: lighter;
+font-size: 10px;
+line-height: 0.5;
+height: 300px;
+}
+
+#scrolldown a {
+font-family: PTSerifItalic;
+font-size:13px;
+color: rgb(48, 48, 48);
+}
+
+/* visited link */
+a:visited {
+color: rgb(48, 48, 48);
+}
+
+
+
+/*MANDALA AND STAR ROTATION----------*/
+.rotate {
+animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(359deg);
+}
+}
+
+</style>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+
+  <div class="topnav" id="myTopnav">
+    <span id="meunome"><a href="index.html" class="active">marianâ</a></span>
+    <a href="contact.html">CONTACT</a>
+    <a href="store.html">STORE</a>
+    <a href="cv.html">CV</a>
+    <a href="portfoliomariana.html">PORTFOLIO</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  
+<br/>
+<br/>
+<br/>
+<div class="cards">
+<div class="card"><a href="stussy.html"><p>STÜSSY</p></a>
+<a href="stussy.html"><img src="stussy/stussy.png" alt="stussy"width= 200 ></a>
+<br/>
+<br/>
+<p class="subtitulo">editorial design</p>
+</div>
+
+<div class="card"><a href="aristo.html"><p>ARISTO</p></a>
+<a href="aristo.html"><img src="aristo/aristo.png" alt="aristo" width= 200></a>
+<br/>
+<br/>
+<p class="subtitulo">editorial design</p>
+</div>
+<div class="card"><a href="mariana.html"><p>MARIANÂ</p></a>
+    <a href="mariana.html"><img src="portfoliogif.gif" alt="mariana" width= 105></a>
+    <br/>
+<br/>
+<p class="subtitulo">branding</p>
+    </div>
+<div class="card"><a href="autopilot.html"><p>AUTO PILOT</p></a>
+<a href="autopilot.html"><img src="autopilot/autopilot.png" alt="auto pilot" width= 120></a>
+<br/>
+<br/>
+<p class="subtitulo">illustration</p>
+</div>
+<div class="card"><a href="frankocean.html"><p>FRANK OCEAN</p></a>
+<a href="frankocean.html"><img src="frank/frank.png" alt="frank"  width= 120></a>
+<br/>
+<br/>
+<p class="subtitulo">illustration</p>
+</div>
+<div class="card"><a href="tyler.html"><p>TYLER, THE CREATOR</p></a>
+<a href="tyler.html"><img src="tyler/tyler1.png" alt="tyler"  width= 120></a>
+<br/>
+<br/>
+<p class="subtitulo">illustration</p>
+</div>
+<div class="card"><a href="miguelluz.html"><p>MIGUEL LUZ</p></a>
+<a href="miguelluz.html"><img src="miguel/miguel1.png" alt="miguel"  width= 120></a>
+<br/>
+<br/>
+<p class="subtitulo">illustration</p>
+</div>
+<div class="card"><a href="chicodatina.html"><p>CHICO DA TINA</p></a>
+    <a href="chicodatina.html"><img src="chico/chicodatina1.png" alt="chico"  width= 120></a>
+    <br/>
+<br/>
+<p class="subtitulo">illustration</p>
+    </div>
+<div class="card"><a href="ocorvo.html"><p>O CORVO</p></a>
+    <a href="ocorvo.html"><img src="cartas/cartas.png" alt="cartas"width= 155 ></a>
+<br/>
+<p class="subtitulo">editorial design</p>
+    </div>
+
+<div class="card"><a href="rethinking.html"><p>RETHINKING EDUCATION</p></a>
+<a href="rethinking.html"><img src="re/rethinking.png" alt="rethinking"  width= 85></a>
+<br/>
+<br/>
+<p class="subtitulo">branding</p>
+</div>
+<div class="card"><a href="abril.html"><p>25 DE ABRIL</p></a>
+<a href="abril.html"><img src="abril/25Abril.png" alt="25abril"  width= 120></a>
+<br/>
+<br/>
+<p class="subtitulo">branding</p>
+</div>
+<div class="card"><a href="analog.html"><p>ANALOG PHOTOGRAPHY</p></a>
+<a href="analog.html"><img src="fotos/foto1.jpg" alt="foto"  width= 110></a>
+<br/>
+<br/>
+<p class="subtitulo">photography</p>
+</div>
+</div>
+
+<div id="scrolldown">
+<h4>YOU CAN DOWNLOAD MY PORTFOLIO</h4><br/>
+<span>
+<a href="MarianaÂngelo_portfolio.pdf" target="_blank" download>here</a></span>
+</div>
+
+<footer>
+  <div class="footer">
+    <div class="footer-left">
+      <a href="https://linktr.ee/marianapintoangelo" target="_blank"><img src="blueberry season.png" width="35" height="35"></a>
+    </div>
+  <div class="footer-right"> <!-- buttons on the footer menu -->
+    <span class ="top"><a href="#">TOP</a></span>
+  </div>
+  </footer>
+  
+</body>
+</html>
