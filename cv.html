@@ -47,7 +47,6 @@ src: url(fonts/PTSerif-Italic.otf);
 font-family: PTSerifItalic;
 }
 
-
 /* HEADER------------------------------
 .header {
 overflow: hidden;
@@ -164,8 +163,6 @@ float: left;
     padding:12px 10px 1px 9px;
   }
 }
-
-
 /* ROW 1 [ABOUT]------------------------------*/
 
 /* Create two equal columns that floats next to each other */
@@ -229,11 +226,11 @@ width: 100%;
 .row2{
 float: center;
 width: 100%;
-height: 350px; /* Should be removed. Only for demonstration */
+height: 100%; /* Should be removed. Only for demonstration */
 }
 
 .row2 .column1{
-height: 500px;
+height: 100%;
 }
 
 .row2 p {
@@ -388,8 +385,9 @@ display: block;
 text-align: left;
 }
 
+
 .footer-right {
-float: none;
+float: right;
 }
 }
 
@@ -410,14 +408,16 @@ line-height: 0.5;
 height: 300px;
 }
 
+
 #scrolldown a {
 font-family: PTSerifItalic;
-font-size:13px;
 color: rgb(48, 48, 48);
+font-size:13px;
+
 }
 
 /* visited link */
-a:visited {
+#scrolldown a:visited {
 color: rgb(48, 48, 48);
 }
 
@@ -455,17 +455,17 @@ transform: rotate(359deg);
 <body>
 
 
-    <div class="topnav" id="myTopnav">
-        <span id="meunome"><a href="index.html" class="active">marianâ</a></span>
-        <a href="contact.html">CONTACT</a>
-        <a href="store.html">STORE</a>
-        <a href="cv.html">CV</a>
-        <a href="portfoliomariana.html">PORTFOLIO</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      
+  <div class="topnav" id="myTopnav">
+    <span id="meunome"><a href="index.html" class="active">marianâ</a></span>
+    <a href="portfoliomariana.html">PORTFOLIO</a>
+    <a href="cv.html">CV</a>
+    <a href="store.html">STORE</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
 
 <br/>
 <br/>
@@ -492,7 +492,7 @@ illustrations.</p>
 </div>
 
 <div class="column1">
-<img src="eu.png" width="370" height="370">
+<img src="eu.png"  class="responsiveImages">
 </div>
 </div>
 <br/>
@@ -668,7 +668,7 @@ Audiovisual Production; History Design; Photography & Composition; Typography in
 <div id="scrolldown">
 <h4>YOU CAN DOWNLOAD MY CV HERE</h4><br/>
 <span>
-    <a href="MarianaÂngelocv.pdf" target="_blank" download="">here</a></span>
+    <a href="MarianaÂngelocv.pdf" target="_blank" download="">here</a></span>
 </div>
 
 
@@ -681,6 +681,7 @@ Audiovisual Production; History Design; Photography & Composition; Typography in
     <span class ="top"><a href="#">TOP</a></span>
   </div>
   </footer>
+  
   
 
 </body>
