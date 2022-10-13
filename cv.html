@@ -47,6 +47,8 @@ src: url(fonts/PTSerif-Italic.otf);
 font-family: PTSerifItalic;
 }
 
+
+
 /* HEADER------------------------------
 .header {
 overflow: hidden;
@@ -163,6 +165,8 @@ float: left;
     padding:12px 10px 1px 9px;
   }
 }
+
+
 /* ROW 1 [ABOUT]------------------------------*/
 
 /* Create two equal columns that floats next to each other */
@@ -174,7 +178,7 @@ padding:5px;
 .column1 {
 float: left;
 width: 50%;
-padding: 50px 40px 50px 80px;
+padding: 2% 2% 2% 6.5%;
 height: 540px; /* Should be removed. Only for demonstration */
 }
 
@@ -203,6 +207,7 @@ letter-spacing: -0.4px;
 
 .column1 img{
 border-radius:25.5px;
+align-items: center;
 }
 
 
@@ -226,11 +231,11 @@ width: 100%;
 .row2{
 float: center;
 width: 100%;
-height: 100%; /* Should be removed. Only for demonstration */
+height: 650px; /* Should be removed. Only for demonstration */
 }
 
 .row2 .column1{
-height: 100%;
+height: 500px;
 }
 
 .row2 p {
@@ -282,7 +287,7 @@ width: 100%;
 .column2 {
 float: left;
 width: 18%;
-padding: 80px;
+padding: 2% 2% 2% 6.5%;
 height:300px; /* Should be removed. Only for demonstration */
 }
 
@@ -335,7 +340,6 @@ font-family: montrealRegular;
 font-size: 10px;
 color: rgb(120, 120, 120);  
 }
-
 
 
 /* FOOTER------------------------------*/
@@ -391,6 +395,12 @@ float: right;
 }
 }
 
+.works .responsiveImages{
+align-items: center;
+width:40%;
+margin-top:-70px;
+}
+
 .responsiveImages{
 width: 80%;
 
@@ -408,16 +418,14 @@ line-height: 0.5;
 height: 300px;
 }
 
-
 #scrolldown a {
 font-family: PTSerifItalic;
-color: rgb(48, 48, 48);
 font-size:13px;
-
+color: rgb(48, 48, 48);
 }
 
 /* visited link */
-#scrolldown a:visited {
+a:visited {
 color: rgb(48, 48, 48);
 }
 
@@ -437,35 +445,22 @@ transform: rotate(359deg);
 }
 
 </style>
-
-<script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
-
-
 </head>
 
 <body>
 
 
-  <div class="topnav" id="myTopnav">
-    <span id="meunome"><a href="index.html" class="active">marianâ</a></span>
-    <a href="portfoliomariana.html">PORTFOLIO</a>
-    <a href="cv.html">CV</a>
-    <a href="store.html">STORE</a>
-    <a href="contact.html">CONTACT</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  
+    <div class="topnav" id="myTopnav">
+        <span id="meunome"><a href="index.html" class="active">marianâ</a></span>
+        <a href="portfoliomariana.html">PORTFOLIO</a>
+        <a href="cv.html">CV</a>
+        <a href="store.html">STORE</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
 
 <br/>
 <br/>
@@ -492,7 +487,7 @@ illustrations.</p>
 </div>
 
 <div class="column1">
-<img src="eu.png"  class="responsiveImages">
+<img src="eu.png" width="370" height="370">
 </div>
 </div>
 <br/>
@@ -673,16 +668,15 @@ Audiovisual Production; History Design; Photography & Composition; Typography in
 
 
 <footer>
-  <div class="footer">
-    <div class="footer-left">
-      <a href="https://linktr.ee/marianapintoangelo" target="_blank"><img src="blueberry season.png" width="35" height="35"></a>
+    <div class="footer">
+      <div class="footer-left">
+        <a href="https://linktr.ee/marianapintoangelo" target="_blank"><img src="blueberry season.png" width="35" height="35"></a>
+      </div>
+    <div class="footer-right"> <!-- buttons on the footer menu -->
+      <span class ="top"><a href="#">TOP</a></span>
     </div>
-  <div class="footer-right"> <!-- buttons on the footer menu -->
-    <span class ="top"><a href="#">TOP</a></span>
-  </div>
-  </footer>
-  
-  
+    </footer>
+    
 
 </body>
 </html>
